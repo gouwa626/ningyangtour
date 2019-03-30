@@ -1,7 +1,7 @@
 <template>
    <div>
      <div v-for="(item,index) in 5" :key="index" class="douxi-wrap">
-       <img src="../../assets/logo.png" height="200" >
+       <img src="../../assets/2.jpg" height="200" width="100%">
        <p class="title-douxi">
          2016年蟋蟀世界杯
        </p>
@@ -34,9 +34,11 @@ export default {
 <style scoped lang='less'>
   .douxi-wrap{
     padding: 12px 20px 3px;
+    box-sizing: border-box;
 
     .title-douxi {
       text-align: center;
+      margin-top: 5px;
     }
   }
   
