@@ -1,6 +1,6 @@
 <template>
    <div class="backWraper">
-     <div class="left">
+     <div class="left"  @click="goBack">
        <i>C</i>
        <span>返回</span>
      </div>
@@ -34,7 +34,9 @@ export default {
 
   },
   methods: {
-
+    goBack(){
+      this.$router.back();
+    }
   },
   components: {
 

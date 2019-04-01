@@ -4,10 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'common/less/index.less'
-import { Button } from 'vant'
+import { Button, Swipe, SwipeItem,Lazyload } from 'vant'
 import 'vant/lib/index.css'
 
-Vue.use(Button)
+Vue.use(Button).use(Swipe).use(SwipeItem).use(Lazyload)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
