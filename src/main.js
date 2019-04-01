@@ -4,10 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'common/less/index.less'
-import { Button, Swipe, SwipeItem,Lazyload } from 'vant'
+import { Button, Swipe, SwipeItem, Lazyload, NavBar, Badge, BadgeGroup, Field } from 'vant'
 import 'vant/lib/index.css'
 
 Vue.use(Button).use(Swipe).use(SwipeItem).use(Lazyload)
+Vue.use(NavBar)
+Vue.use(Badge)
+Vue.use(BadgeGroup)
+Vue.use(Field)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

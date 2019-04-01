@@ -15,6 +15,21 @@ export default new Router({
       component: () => import('components/Index')
     },
     {
+      path: '/wlnews', // 文旅资讯
+      name: 'Wlnews',
+      component: () => import('components/Wlnews')
+    },
+    {
+      path: '/wlactive', // 文旅资讯
+      name: 'Wlactive',
+      component: () => import('components/Wlactive')
+    },
+    {
+      path: '/publicserver', // 公共服务
+      name: 'Publicserver',
+      component: () => import('components/Publicserver')
+    },
+    {
       path: '/feiyi', // 非遗
       name: 'Feiyi',
       component: () => import('components/Feiyi')
