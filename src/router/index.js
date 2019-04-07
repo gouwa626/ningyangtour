@@ -15,14 +15,33 @@ export default new Router({
       component: () => import('components/Index')
     },
     {
-      path: '/wlnews', // 文旅资讯
-      name: 'Wlnews',
-      component: () => import('components/Wlnews')
+      path: '/aboutny', // 宁阳简介
+      name: 'AboutNy',
+      component: () => import('components/AboutNy')
     },
     {
-      path: '/wlactive', // 文旅资讯
+      path: '/wlactive', // 文娱活动
       name: 'Wlactive',
-      component: () => import('components/Wlactive')
+      component: () => import('components/Wlactive'),
+      children: [
+        {
+          path: 'wlactivedetail', // 文娱活动二级页面
+          name: 'WlactiveDetail',
+          component: () => import('components/Wlactive/WlactiveDetail')
+        }
+      ]
+    },
+    {
+      path: '/wlseries', // 文旅专题
+      name: 'Wlseries',
+      component: () => import('components/Wlseries'),
+      children: [
+        {
+          path: 'wldetail', // 文旅专题二级页面
+          name: 'WlDetail',
+          component: () => import('components/Wlseries/WlDetail')
+        }
+      ]
     },
     {
       path: '/publicserver', // 公共服务

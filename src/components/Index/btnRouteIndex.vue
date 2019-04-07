@@ -1,26 +1,26 @@
 <template>
     <div class="route-wrap">
         <div class="city-wrap">
-            <div class="city-lingyang">
+            <router-link class="city-lingyang" to="/aboutny" tag="div">
                 宁阳
-            </div>
+            </router-link>
             <div>
                 2-13C
             </div>
         </div>
         <div class="active-wrap">
-            <div>
+            <router-link to="/wlseries" tag="div">
                 <div></div>
                 文旅咨询
-            </div>
-            <div>
+            </router-link>
+            <router-link to="/wlactive" tag="div">
                 <div></div>
                 文旅活动
-            </div>
-            <div>
+            </router-link>
+            <router-link to="/publicserver" tag="div">
                 <div></div>
                 公共服务
-            </div>
+            </router-link>
             <div>
                 <div></div>
                 文化遗产
@@ -42,11 +42,11 @@
 
 <script>
 export default {
-    data(){
-        return {
+  data() {
+    return {
 
-        }
     }
+  }
 }
 </script>
 
@@ -69,11 +69,11 @@ export default {
                 border-right: 1px dashed rgb(181,181,181);
             }
         }
-        
+
         .active-wrap {
             height: 100px;
             background-color: rgb(224,224,221);
-            display: flex; 
+            display: flex;
             justify-content: space-between;
             padding: 10px;
         }
@@ -82,7 +82,7 @@ export default {
             padding:10px;
             background-color: rgb(164,164,164);
             display: flex;
-            justify-content: space-between; 
+            justify-content: space-between;
             align-items: center;
 
             .project-title {
@@ -100,4 +100,3 @@ export default {
         }
     }
 </style>
-
