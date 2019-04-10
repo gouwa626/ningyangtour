@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div class="mescroll-touch">
      <div v-for="(item,index) in 5" :key="index" class="douxi-wrap">
        <img src="../../assets/2.jpg" height="200" width="100%">
        <p class="title-douxi">

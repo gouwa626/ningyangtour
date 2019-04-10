@@ -1,7 +1,9 @@
 <template>
    <div class="detailWrap">
      <Backbar title="文旅专题"></Backbar>
-     <div class="content">
+      <!--mescroll滚动区域的基本结构-->
+      <MyScroll>
+       <div>
         <p class="title">复圣公园景区助力宁阳“旅游+”打造全域旅游新格局!</p>
         <div class="contentImg">
           <img src="../../../assets/2.jpg" width="100%">
@@ -21,30 +23,30 @@
           在这全域旅游的格局中，复圣公园景区不断求新
           求变，全面系统推进复圣文化核心品牌建设，打
           造精品旅游景区！</p>
-     </div>
+        </div>
+      </MyScroll>
    </div>
 </template>
 
 <script>
 import Backbar from 'base/Backbar'
+import MyScroll from 'base/MyScroll'
 export default {
   name: 'WlDetail',
   data() {
     return {
-
     }
   },
   mounted() {
-
   },
   watch: {
 
   },
   methods: {
-
   },
   components: {
-    Backbar
+    Backbar,
+    MyScroll
   }
 }
 </script>
@@ -52,10 +54,19 @@ export default {
 <style scoped lang='less'>
 .detailWrap{
   background-color: #fff;
-  .content{
-    padding:56px 13px 10px 13px;
+  position: fixed;
+  top: 44px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .mescroll{
+    padding:10px 13px;
     box-sizing: border-box;
-    overflow-y: scroll;
+    position: fixed;
+    top: 44px;
+    bottom: 0;
+    z-index: 11;
+    height: auto;
     .title{
       font-size: 22px;
       line-height: 26px;

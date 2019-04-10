@@ -1,7 +1,8 @@
 <template>
    <div class="detailWrap">
-     <Backbar title="活动详情"></Backbar>
-     <div class="content">
+    <Backbar title="活动详情"></Backbar>
+    <MyScroll>
+    <div class="content">
         <p class="title">迎新春·杨松涛书画展</p>
         <div class="contentImg">
           <img src="../../../assets/2.jpg" width="100%">
@@ -13,7 +14,8 @@
           在这全域旅游的格局中，复圣公园景区不断求新
           求变，全面系统推进复圣文化核心品牌建设，打
           造精品旅游景区！</p>
-     </div>
+    </div>
+    </MyScroll>
      <!-- 报名弹出层开始 -->
       <div class="popWrap" v-show="popSheet">
         <div class="opaticy"></div>
@@ -50,6 +52,7 @@
 
 <script>
 import Backbar from 'base/Backbar'
+import MyScroll from 'base/MyScroll'
 export default {
   name: 'WlactiveDetail',
   data() {
@@ -69,7 +72,8 @@ export default {
     }
   },
   components: {
-    Backbar
+    Backbar,
+    MyScroll
   }
 }
 </script>
@@ -78,8 +82,15 @@ export default {
 @import '~common/less/variable.less';
 .detailWrap{
   background-color: #fff;
+  .mescroll{
+    position: fixed;
+    top: 44px;
+    bottom: 0;
+    height: auto;
+    background-color: #fff;
+  }
   .content{
-    padding:56px 13px 10px 13px;
+    padding:10px 13px;
     box-sizing: border-box;
     overflow-y: scroll;
     .title{

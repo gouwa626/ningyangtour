@@ -6,6 +6,7 @@ import router from './router'
 import 'common/less/index.less'
 import { Icon, Button, Swipe, SwipeItem, Lazyload, NavBar, Badge, BadgeGroup, Field } from 'vant'
 import 'vant/lib/index.css'
+import 'mescroll.js/mescroll.min.css' // 全局引入mescroll样式
 
 Vue.use(Button).use(Swipe).use(SwipeItem).use(Lazyload)
 Vue.use(NavBar)
