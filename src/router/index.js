@@ -20,6 +20,11 @@ export default new Router({
       component: () => import('components/AboutNy')
     },
     {
+      path: '/baoming', // 宁阳简介
+      name: 'BaoMing',
+      component: () => import('components/BaoMing')
+    },
+    {
       path: '/wlactive', // 文娱活动
       name: 'Wlactive',
       component: () => import('components/Wlactive'),
