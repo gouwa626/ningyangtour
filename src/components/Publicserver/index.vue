@@ -17,7 +17,7 @@
         </div>
         <div class="badgesub">
           <MyScroll>
-            <div class="badgesubitem" v-for="i in 10">
+            <div class="badgesubitem" v-for="i in 10" @click="jumpToDetail">
               <div class="van-hairline--bottom">
                 <p class="title">宁阳县鲁为川味堂</p>
                 <div class="infoWraper">
@@ -95,6 +95,9 @@ export default {
   methods: {
     onChange(key) {
       this.activeKey = key
+    },
+    jumpToDetail() {
+      this.$router.push({name: 'PublicDetail'})
     }
   },
   components: {

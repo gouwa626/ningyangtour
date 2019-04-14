@@ -41,7 +41,7 @@ export default {
 /*通过fixed固定mescroll的高度*/
 .mescroll {
   position: fixed;
-  top: 44px;
+  top: 46px;
   bottom: 0;
   height: auto;
 }

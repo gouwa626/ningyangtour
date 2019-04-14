@@ -4,7 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'common/less/index.less'
-import { Icon, Button, Swipe, SwipeItem, Lazyload, NavBar, Badge, BadgeGroup, Field } from 'vant'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+
+// require styles
+import 'swiper/dist/css/swiper.css'
+import { Icon, Button, Swipe, SwipeItem, Lazyload, NavBar, Badge, BadgeGroup, Field, Slider } from 'vant'
 import 'vant/lib/index.css'
 import 'mescroll.js/mescroll.min.css' // 全局引入mescroll样式
 
@@ -14,6 +18,8 @@ Vue.use(Badge)
 Vue.use(BadgeGroup)
 Vue.use(Field)
 Vue.use(Icon)
+Vue.use(Slider)
+Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

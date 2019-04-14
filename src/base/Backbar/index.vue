@@ -123,6 +123,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    div{
+      border-bottom: 2px solid transparent;
+    }
+    .active{
+      color: #7F8FCA;
+      border-bottom: 2px solid #7F8FCA;
+    }
   }
 }
 </style>

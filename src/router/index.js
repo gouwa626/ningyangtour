@@ -25,6 +25,16 @@ export default new Router({
       component: () => import('components/BaoMing')
     },
     {
+      path: '/live', // 直播赛事
+      name: 'Live',
+      component: () => import('components/Live')
+    },
+    {
+      path: '/videov', // 视频列表页面
+      name: 'Videov',
+      component: () => import('components/Videov')
+    },
+    {
       path: '/wlactive', // 文娱活动
       name: 'Wlactive',
       component: () => import('components/Wlactive'),
@@ -52,6 +62,16 @@ export default new Router({
       path: '/publicserver', // 公共服务
       name: 'Publicserver',
       component: () => import('components/Publicserver')
+    },
+    {
+      path: '/viewspot', // 景点详情页面
+      name: 'ViewSpot',
+      component: () => import('components/ViewSpot')
+    },
+    {
+      path: '/publicdetail', // 公共服务详情
+      name: 'PublicDetail',
+      component: () => import('components/PublicDetail')
     },
     {
       path: '/feiyi', // 非遗
