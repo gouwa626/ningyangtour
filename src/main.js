@@ -8,7 +8,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 // require styles
 import 'swiper/dist/css/swiper.css'
-import { Icon, Button, Swipe, SwipeItem, Lazyload, NavBar, Badge, BadgeGroup, Field, Slider } from 'vant'
+import { Icon, Button, Swipe, SwipeItem, Lazyload, NavBar, Badge, BadgeGroup, Field, Slider, Popup, Collapse, CollapseItem } from 'vant'
 import 'vant/lib/index.css'
 import 'mescroll.js/mescroll.min.css' // 全局引入mescroll样式
 
@@ -20,6 +20,8 @@ Vue.use(Field)
 Vue.use(Icon)
 Vue.use(Slider)
 Vue.use(VueAwesomeSwiper)
+Vue.use(Popup)
+Vue.use(Collapse).use(CollapseItem)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

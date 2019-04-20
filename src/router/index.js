@@ -20,7 +20,7 @@ export default new Router({
       component: () => import('components/AboutNy')
     },
     {
-      path: '/baoming', // 宁阳简介
+      path: '/baoming', // 报名页面
       name: 'BaoMing',
       component: () => import('components/BaoMing')
     },
@@ -72,6 +72,11 @@ export default new Router({
       path: '/publicdetail', // 公共服务详情
       name: 'PublicDetail',
       component: () => import('components/PublicDetail')
+    },
+    {
+      path: '/legacy', // 非遗
+      name: 'Legacy',
+      component: () => import('components/Legacy')
     },
     {
       path: '/feiyi', // 非遗

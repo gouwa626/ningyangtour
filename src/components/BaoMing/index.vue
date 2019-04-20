@@ -2,10 +2,11 @@
     <section class="signup-wrap">
         <div class="signup-header">
         </div>
-        <div class="signup-info">   
+        <div class="signup-info">
             <div class="info-title">
                 <h1>
                     活动报名
+                    <span></span>
                 </h1>
                 <h3>
                     迎新春*杨松涛画展
@@ -49,20 +50,21 @@
                     提交报名
                 </div>
             </div>
-        </div>
-        <div class="signup-footer"> 
 
+        <div class="signup-footer">
+
+        </div>
         </div>
     </section>
 </template>
 
 <script>
 export default {
-    data(){
-        return {
-
-        }
+  data() {
+    return {
+      value: ''
     }
+  }
 }
 </script>
 
@@ -73,6 +75,7 @@ export default {
         font-family:PingFangSC-Regular;
         // position: relative;
         // display: flex;
+        background: #fff;
 
         .signup-header {
             width: 100%;
@@ -84,11 +87,11 @@ export default {
             position: absolute;
             top: 45px;
             left: 0;
+            bottom: 0;
             // padding: 0 12px;
             // box-sizing: border-box;
             width: 100%;
-            
-            
+
             .info-title {
                 color: #fff;
                 font-family:PingFangSC-Regular;
@@ -98,10 +101,10 @@ export default {
                 background-position: 0px 8px;
                 background-size: 100%;
                 background-repeat: no-repeat;
-                
+
                 h1 {
                     font-size: 33px;
-                    
+
                     padding: 0 12px 15px;
                 }
 
@@ -129,7 +132,7 @@ export default {
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
                     vertical-align: middle;
-                } 
+                }
 
                 .img-clock {
                     display: inline-block;
@@ -141,7 +144,7 @@ export default {
                     background-repeat: no-repeat;
                     vertical-align: bottom;
 
-                } 
+                }
 
                 .info-p {
                     height:20px;
@@ -163,22 +166,22 @@ export default {
                 .form-item {
                     margin: 9px 0;
                     display: flex;
-                    
+
                     .img-user {
                         .bg-image('xingming');
-                    } 
+                    }
 
                      .img-id {
                         .bg-image('id');
-                    } 
+                    }
 
                      .img-phone {
                         .bg-image('phone');
-                    } 
+                    }
 
                      .img-address {
                         .bg-image('dizhi');
-                    } 
+                    }
 
                     .form-img {
                         display: inline-block;
@@ -201,14 +204,15 @@ export default {
 
             .info-btn {
                 width: 100%;
-                padding: 45px 25px;
+                padding: 0 25px;
+                margin: 40px 0 20px 0;
                 box-sizing: border-box;
-                
+
                 .btn-comfirm {
                     height:40px;
                     background:rgba(159,201,241,1);
                     box-shadow:0px 3px 3px 0px rgba(79,104,191,0.15);
-                    border-radius:5px;   
+                    border-radius:5px;
                     font-size: 13px;
                     color: #fff;
                     text-align: center;
@@ -220,14 +224,12 @@ export default {
         .signup-footer {
             height: 65px;
             width: 100%;
-            position: absolute;
-            bottom: 0;
+            // position: absolute;
+            // bottom: 0;
             // align-self: flex-end;
             .bg-image('signupfooter');
-            background-size: 100% 100%;
-            
+            background-size: cover;
+
         }
     }
 </style>
-
-
